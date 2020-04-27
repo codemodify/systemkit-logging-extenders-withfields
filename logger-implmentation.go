@@ -7,11 +7,11 @@ import (
 )
 
 type withFieldsLogger struct {
-	logger logging.Logger
+	logger logging.CoreLogger
 }
 
 // NewWithFieldsLogger -
-func NewWithFieldsLogger(logger logging.Logger) WithFieldsLogger {
+func NewWithFieldsLogger(logger logging.CoreLogger) WithFieldsLogger {
 	return &withFieldsLogger{
 		logger: logger,
 	}
